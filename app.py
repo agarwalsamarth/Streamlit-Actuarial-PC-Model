@@ -45,7 +45,10 @@ user_question = st.text_input("Ask a question:")
 if st.button("Submit") and user_question:
     with st.spinner("Thinking..."):
         try:
+            st.write("📤 Sending to Vanna:", user_question)
             sql = st.session_state.vn.generate_sql(user_question)
+            st.write("✅ SQL generated:", sql)
+            
             df = st.session_state.vn.run_sql(sql)
             plot_code = st.session_state.vn.generate_plotly_code(user_question, sql)
 
