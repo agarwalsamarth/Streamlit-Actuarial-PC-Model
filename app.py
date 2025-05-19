@@ -6,10 +6,10 @@ import os
 import plotly
 
 # Config
-#vanna_api_key = st.secrets["vanna_api_key"]
-#vanna_model_name = st.secrets["vanna_model_name"]
-vanna_api_key = "ff0f0fdd4d5e4ff6ba12a9d3473df087"
-vanna_model_name = "actuarial_pc_model"
+vanna_api_key = st.secrets["vanna_api_key"]
+vanna_model_name = st.secrets["vanna_model_name"]
+#vanna_api_key = "ff0f0fdd4d5e4ff6ba12a9d3473df087"
+#vanna_model_name = "actuarial_pc_model"
 training_file = "vanna_training.json"
 db_file = 'Actuarial_PC.db'
 
