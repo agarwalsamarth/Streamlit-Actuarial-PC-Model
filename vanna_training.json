@@ -1,0 +1,8 @@
+{
+  "question_sql_pairs": [
+    {
+      "question": "Show me Profile wise FinancePremium",
+      "sql": "SELECT Reserve_Profile, SUM(FinancePremium) AS TotalFinancePremium\n    FROM PNC_Claims\n    GROUP BY Reserve_Profile;"
+    }
+  ]
+}
